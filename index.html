@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melon TOP 100 Dashboard</title>
+    <meta name="description" content="현재 멜론 TOP 100 실시간 차트를 확인하고 바로 감상하세요.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Melon TOP 100</h1>
+            <p id="currentDate">Real-time Music Chart</p>
+        </header>
+
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="곡명 또는 아티스트 검색...">
+            </div>
+        </div>
+
+        <main id="musicGrid" class="music-grid">
+            <!-- Music cards will be injected here by JS -->
+            <div class="loading">데이터를 불러오는 중...</div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
